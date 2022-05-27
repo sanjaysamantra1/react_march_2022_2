@@ -1,25 +1,16 @@
-import "./App.css";
-import AjaxDemo6 from "./components/AjaxDemo6";
-import AjaxDemo1 from "./components/AjaxDemo1";
-import AjaxDemo2 from "./components/AjaxDemo2";
-import AjaxDemo3 from "./components/AjaxDemo3";
-import AjaxDemo4 from "./components/AjaxDemo4";
-import AjaxDemo5 from "./components/AjaxDemo5";
-import { myInterceptor, myInterceptor2 } from "./utils/token_interceptor";
+import React from "react";
+import Footer from "./components/footer/Footer";
+import Header from "./components/header/Header";
+import Main from "./components/main/Main";
+import Navbar from "./components/navbar/Navbar";
 
-function App() {
-  myInterceptor();
-  myInterceptor2();
+export default function App() {
   return (
-    <div>
-      <AjaxDemo1></AjaxDemo1>
-      <AjaxDemo2></AjaxDemo2>
-      <AjaxDemo3></AjaxDemo3>
-      <AjaxDemo4></AjaxDemo4>
-      <AjaxDemo5></AjaxDemo5>
-      <AjaxDemo6></AjaxDemo6>
-    </div>
+    <>
+      <Header></Header>
+      <Navbar></Navbar>
+      <Main></Main>
+      <Footer></Footer>
+    </>
   );
 }
-
-export default App;
