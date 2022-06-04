@@ -47,6 +47,16 @@ export default function Navbar() {
                   <NavLink to="/products">Products</NavLink>
                 </a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  <NavLink to="/demo1">Demo1</NavLink>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  <NavLink to="/demo2">Demo2</NavLink>
+                </a>
+              </li>
             </ul>
             <form className="d-flex" role="search">
               <input

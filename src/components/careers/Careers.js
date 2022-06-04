@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Careers() {
   return (
-    <h1>Careers compo</h1>
+    <h1>this is Careers component</h1>
   )
 }
