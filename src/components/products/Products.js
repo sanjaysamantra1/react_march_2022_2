@@ -48,30 +48,7 @@ export default function Products() {
       <div className="container">
         <div className="row">
           <div className="col-sm-8">
-            {products.map((product) => (
-              <div className="card" style={{ width: "18rem" }} key={product.id}>
-                <img className="card-img-top" src="..." alt="Card image cap" />
-                <div className="card-body">
-                  <h5 className="card-title">{product.category}</h5>
-                  <p className="card-text">{product.description}</p>
-                  <p className="card-text">price - {product.price}</p>
-                  <p className="card-text">rating - {product.rating.rate}</p>
-                  <button>
-                    <Link to={`/productdetails/${product.id}`}>
-                      View Details
-                    </Link>
-                  </button>
-                  <button
-                    className="btn btn-secondary"
-                    onClick={() => {
-                      navigateHandler(product.category, product.price);
-                    }}
-                  >
-                    query param
-                  </button>
-                </div>
-              </div>
-            ))}
+              
           </div>
           <div className="col-sm-2">
             <Outlet></Outlet>

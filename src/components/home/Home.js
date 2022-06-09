@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Employees from "../employees/Employees";
 // import Counter from "../counter/Counter";
 // import UseReducerDemo from "../hooks/UseReducerDemo";
 import MemoDemo from "../memo/MemoDemo";
@@ -14,7 +15,8 @@ export default function Home() {
       {/* <UseReducerDemo></UseReducerDemo> */}
       {/* <MemoDemo></MemoDemo> */}
       {/* <UseMemoDemo></UseMemoDemo> */}
-      <UseCallBackDemo></UseCallBackDemo>
+      {/* <UseCallBackDemo></UseCallBackDemo> */}
+      <Employees></Employees>
     </div>
   );
 }
